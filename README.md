@@ -1,4 +1,4 @@
-# first_bot
+# RandomTelegramBot
 It's my first telegram bot. When you start dialogue with bot you will get the message:
 ```
 Hi, {Your Name}! My name is {Bot's Name}. I am a bot that was written for printing the random number in interval that you will write
