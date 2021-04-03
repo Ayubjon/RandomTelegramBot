@@ -15,7 +15,7 @@ def welcome(message):
     item1 = types.KeyboardButton("🎲Write interval")
     item2 = types.KeyboardButton("😁just speak")
     markup.add(item1, item2)
-    bot.send_message(message.chat.id, "Hi, {0.first_name}! My name is <b>{1.first_name}</b>. I am the bot that was written for printing the random number in interval that you will write".format(message.from_user, bot.get_me()),
+    bot.send_message(message.chat.id, "Hi, {0.first_name}! My name is <b>{1.first_name}</b>. I am a bot that was written for printing the random number in interval that you will write".format(message.from_user, bot.get_me()),
         parse_mode = 'HTML', reply_markup = markup)
 
 
@@ -27,7 +27,7 @@ def speak(message):
     #bot.send_message(message.chat.id, message.text)
     if message.chat.type == 'private':
         if message.text == "🎲Write interval":
-            bot.send_message(message.chat.id, "Write the interval like a (number-number), example:\n1-50")
+            bot.send_message(message.chat.id, "Write the interval like a (number1-number2), example:\n1-50")
             a[0] = 0
         elif message.text == "😁just speak":
             bot.send_message(message.chat.id, "let's speak")
